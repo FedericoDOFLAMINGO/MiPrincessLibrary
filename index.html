@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bienvenida a mi biblioteca</title>
+<title>Tu Biblioteca</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">
 <style>
@@ -357,9 +357,9 @@
     <div class="door door-left"><div class="door-handle"></div></div>
     <div class="door door-right"><div class="door-handle"></div></div>
     <div class="plaque">
-      <div class="eyebrow">Biblioteca privada</div>
-      <h1>Bienvenida a mi<br>biblioteca</h1>
-      <div class="tap-hint">toca la puerta para entrar ✦</div>
+      <div class="eyebrow">Love Library</div>
+      <h1>Mi<br>Princesita</h1>
+      <div class="tap-hint">Entrar ✦</div>
     </div>
   </div>
 </section>
@@ -368,9 +368,9 @@
 <section id="scene-library">
   <div class="library-title">
     <div class="eyebrow">Sala principal</div>
-    <h2>Aquí guardo todo lo que quiero decirte</h2>
+    <h2>Una Memoria en cada libro</h2>
   </div>
-  <p class="library-sub">Hay cuatro libros esperándote en el estante. Ábrelos, léelos, y pasa la página de cada uno para encontrar su dedicatoria.</p>
+  <p class="library-sub">Hay cuatro libros esperándote en el estante. Cada uno con un texto sólo para ti.</p>
 
   <div class="decor-shelf" id="decorShelf"></div>
 
@@ -380,7 +380,7 @@
 
   <div class="final-reveal" id="finalReveal">
     "Cada libro de este estante dice lo mismo de formas distintas: que te amo, que te elijo, y que pienso en ti sin parar."
-    <span class="small">— fin de la visita, por ahora</span>
+    <span class="small">— Te quiero en toda mi vida para toda mi existencia, hasta que mi alma se pierda en los astros y el infinito cosmos y aún así, nunca se borrará el amor que tengo por ti.</span>
   </div>
 </section>
 
@@ -460,34 +460,34 @@ musicToggle.addEventListener('click', function(){
    Agrega, quita o edita las entradas de este arreglo (shelfBooks) las veces que quieras.
    El número de "lomos" en el estante se ajusta automáticamente según cuántas entradas pongas. */
 const shelfBooks = [
-  { note:'Cada vez que paso por aquí me acuerdo de ti.', media:null },
-  { note:'Este libro guarda una sonrisa tuya que no se me olvida.', media:{ type:'photo', src:'nota1.jpg' } },
+  { note:'Siempre te llevó en mi corazón.', media:null },
+  { note:'Mi corazón siempre guarda todas tus sonrisas.', media:{ type:'photo', src:'nota1.jpg' } },
   { note:'Contigo hasta lo aburrido se vuelve mi parte favorita del día.', media:null },
-  { note:'Aquí guardo una de las veces que más me reí contigo.', media:{ type:'video', src:'nota2.mp4' } },
+  { note:'Cada risa contigo es única y adoro mostrarte mi felicidad.', media:{ type:'video', src:'nota2.mp4' } },
   { note:'No hay estante lo suficientemente grande para todo lo que siento por ti.', media:null },
   { note:'Este es un recordatorio: eres mi persona favorita.', media:null },
-  { note:'Una foto de un día cualquiera que se volvió especial solo porque estabas tú.', media:{ type:'photo', src:'nota3.jpg' } },
+  { note:'En todo momento eres lo que más amo y lo que siempre amaré.', media:{ type:'photo', src:'nota3.jpg' } },
   { note:'Gracias por elegirme también a mí, todos los días.', media:null },
-  { note:'Aquí guardo la promesa de seguir escribiendo historias contigo.', media:null },
+  { note:'Una promesa de seguir escribiendo historias contigo.', media:null },
   { note:'Este libro no tiene final triste: contigo, todos son felices.', media:null },
   { note:'Una de nuestras tonterías favoritas, guardada para siempre.', media:{ type:'video', src:'nota4.mp4' } },
   { note:'Contigo aprendí que el amor también se nota en lo pequeño.', media:null },
-  { note:'Este lomo guarda un "te quiero" que se me escapó sin querer.', media:null },
+  { note:'En cada libro hay un te quiero y en cada uno lo digo con más cariño que el anterior.', media:null },
   { note:'Una foto tuya que me alegra el día sin que tú lo sepas.', media:{ type:'photo', src:'nota5.jpg' } },
   { note:'Aquí guardo las ganas de seguir construyendo cosas contigo.', media:null },
   { note:'Este libro es un gracias silencioso por estar en mi vida.', media:null },
-  { note:'Un recuerdo random que me hace sonreír como tonto.', media:null },
-  { note:'Aquí guardo una promesa: siempre voy a elegir cuidarte.', media:{ type:'photo', src:'nota6.jpg' } },
+  { note:'Siempre recuerdo cada momento a tu lado con una enorme felicidad.', media:null },
+  { note:'Porque yo siempre voy a elegir cuidarte y quererte.', media:{ type:'photo', src:'nota6.jpg' } },
   { note:'Contigo hasta los días grises se sienten más ligeros.', media:null },
   { note:'Este libro guarda una risa tuya que se quedó grabada en mí.', media:{ type:'video', src:'nota7.mp4' } },
   { note:'Una nota chiquita para recordarte lo mucho que te quiero.', media:null },
   { note:'Aquí guardo las ganas de darte más días buenos.', media:null },
-  { note:'Este lomo tiene una foto de un momento que quiero recordar siempre.', media:{ type:'photo', src:'nota8.jpg' } },
+  { note:'Un momento que quiero recordar siempre.', media:{ type:'photo', src:'nota8.jpg' } },
   { note:'Contigo todo pesa menos y se disfruta más.', media:null },
   { note:'Este libro guarda la certeza de que contigo estoy en el lugar correcto.', media:null },
-  { note:'Una notita random: hoy también pensé en ti.', media:null },
+  { note:'Una notita random: hoy como siempre no dejó de pensar en ti.', media:null },
   { note:'Aquí guardo unas ganas enormes de seguir sumando recuerdos contigo.', media:null },
-  { note:'Este libro guarda un video tonto que me sigue sacando risa.', media:{ type:'video', src:'nota9.mp4' } },
+  { note:'Un vídeo que cada que lo miro me da felicidad y una enorme sonrisa.', media:{ type:'video', src:'nota9.mp4' } },
   { note:'Contigo hasta los planes simples se vuelven mis favoritos.', media:null },
   { note:'Este lomo guarda una foto que resume por qué te quiero tanto.', media:{ type:'photo', src:'nota10.jpg' } },
   { note:'Una promesa guardada aquí: seguir eligiéndote siempre.', media:null },
@@ -539,9 +539,9 @@ const books = [
     caption:'Hay personajes que son perfectos sin intentarlo.',
     eyebrow:'Sobre ti',
     title:'Eres perfecta, y no sé explicarlo mejor',
-    content:`<p class="reader-text">Eres <strong>linda</strong>, eres <strong>hermosa</strong>, y lo eres de una forma que ningún libro ha sabido describir bien todavía. No es solo lo que veo cuando te miro, es lo que siento cuando pienso en ti: que eres <em>perfecta</em>, exactamente como eres, sin necesitar corregir ni una sola línea.</p>`,
-    dedication:`Para la persona más hermosa que conozco, por dentro y por fuera. Nunca cambies nada, porque para mí ya eres perfecta.`,
-    sign:'— con todo mi cariño',
+    content:`<p class="reader-text">Eres <strong>linda</strong>, eres <strong>hermosa</strong>, y lo eres de una forma que ningún libro ha sabido describir bien. No es solo lo que veo cuando te miro, es lo que siento cuando pienso en ti: que eres <em>perfecta</em>, exactamente como eres, sin necesitar corregir ni una sola línea.</p>`,
+    dedication:`Para la persona más hermosa, por dentro y por fuera. Nunca cambies nada, porque para mí ya eres perfecta.`,
+    sign:'— con todo mi cariño, Tu Cariñoso FER',
     media:null
   },
   {
@@ -552,7 +552,7 @@ const books = [
     title:'Eres todo lo que voy a anhelar siempre',
     content:`<p class="reader-text">Eres completamente todo lo que siempre voy a querer en mi vida. No busco otra historia, no busco otro final: te busco a ti, una y otra vez, en cada capítulo que me queda por vivir. Eso es lo que voy a <strong>anhelar siempre</strong>, en cada momento, sin excepción.</p>`,
     dedication:`Prometo elegirte siempre, en cada capítulo que me quede por vivir. Eres, sin duda, mi final feliz.`,
-    sign:'— tuyo, siempre',
+    sign:'— tuyo, siempre, Tu Horno FER',
     media:null
   },
   {
@@ -561,9 +561,9 @@ const books = [
     caption:'Hay páginas que uno relee sin darse cuenta.',
     eyebrow:'Un recuerdo tuyo',
     title:'Nunca dejo de pensar en ti',
-    content:`<p class="reader-text">Para todo momento siempre tengo un recuerdo de ti guardado, como quien guarda un marcapáginas en la parte favorita del libro. No dejo de pensar en ti, ni por un instante: estás en cada pausa, en cada distracción, en cada segundo en el que mi mente decide, sin permiso, volver a ti.</p>`,
+    content:`<p class="reader-text">Para todo momento siempre tengo un recuerdo de ti guardado, como quien guarda un separador en la parte favorita del libro. No dejo de pensar en ti, ni por un instante: estás en cada pausa, en cada distracción, en cada segundo en el que mi mente decide, sin permiso, volver a ti.</p>`,
     dedication:`Donde sea que esté, ahí estás tú también, en mis pensamientos. Eres el recuerdo que nunca quiero perder.`,
-    sign:'— pensando en ti',
+    sign:'— pensando en ti,Tu Tontito FER',
     media:null
   },
   {
@@ -574,7 +574,7 @@ const books = [
     title:'Voy a cuidar tu corazón, siempre',
     content:`<p class="reader-text">Prometo llenarte de cariño y amor todos los días que me dejes hacerlo. Prometo cuidarte y proteger tu lindo corazón como se protege lo más valioso que uno tiene: con paciencia, con ternura, y sin condiciones. Ese es mi único final feliz.</p>`,
     dedication:`Prometo cuidarte, protegerte y amarte todos los días de mi vida. Tu corazón está a salvo conmigo.`,
-    sign:'— quien te cuida',
+    sign:'— quien te cuida, Tu Latoso FER',
     media:null
   }
 ];
